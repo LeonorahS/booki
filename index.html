@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,40 +13,39 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <div class="main-container">
+   <div class="main-container">
             <nav>
                 <div>
-                   <img id="logo" src="images/logo/Booki.png" alt="Booki">
-                    <a href="images/logo/Booki@3x.png"><span></span></a>
+                
+                    <a href="images/logo/Booki@3x.png"><img id="logo" src="images/logo/Booki.png" alt="Booki"></a>
                 </div>
                 <ul class="ulnav">
-                    <li><a href="#">Hébergements</a></li>
-                    <li><a href="#">Activités</a></li>
+                    <li><a href="#hebergements">Hébergements</a></li>
+                    <li><a href="#activites">Activités</a></li>
                  </ul>
             </nav>
-                <header>
-                <H1>Trouvez votre logement pour des vacances de rêve</H1>
+             <header>
+                <h1>Trouvez votre logement pour des vacances de rêve</h1>
                 <p class="desc">En plein centre de ville ou en nature</p>
                 <form class="rechercher-form" action="#">
                 <label for="location"><i class="fa-solid fa-location-dot"></i></label>
-                <input type="text" id="location" placeholder="Marseille,France">
+                <input type="text" id="location" placeholder="Marseille, France">
                 <button id="rechercher" type="submit">Rechercher</button>
                 </form>
-                <div class="filtres">
+                <section class="filtres">
                     <h3>Filtres</h3>
                     <ul class="filtres-list"> 
-                        <li><button><i class="fa-solid fa-money-bill-wave">Economique</i></button></li>
-                        <li><button><i class="fa-solid fa-person">Familial</i></button></li>
-                        <li><button><i class="fa-solid fa-heart">Romantique</i></button></li>
-                        <li><button><i class="fa-solid fa-fire">Nos pépites</i></button></li>
+                        <li><button><i class="fa-solid fa-money-bill-wave"></i>Economique</button></li>
+                        <li><button><i class="fa-solid fa-person"></i>Familial</button></li>
+                        <li><button><i class="fa-solid fa-heart"></i>Romantique</button></li>
+                        <li><button><i class="fa-solid fa-fire"></i>Nos pépites</button></li>
                     </ul>
-                </div>
-                <div class="info">
+                </section>
+                <aside class="info">
                     <i class="fa-circle-info"></i>
                     <p>Plus de 500 logements sont disponibles dans cette ville</p>
-                </div>
-            
-        </header>
+                </aside>
+            </header>
         <main>
             <div class="hebergements-and-populaires">
                 <section class="hebergements">
@@ -244,12 +242,12 @@
 
                                 </article>
                         </a>
-                    </div>
+            </div>
                 
             </div>
              </section>
-                <article class="activites">
-                     <div class="activites-title">
+             <Section class="activites">
+                    <div class="activites-title">
                         <h2 class="section-title">Activités à Marseille</h2>
                     </div>
                     <div class="populaires-cards">
@@ -260,10 +258,9 @@
                                     <div class="card-txt">
                                         <h3 class="card-title">Vieux-Port</h3>
                                     </div>
-                                    </div>
-                                    </div>
-    
-                    <div class="populaires-cards">
+                                </div>
+                            </article>
+                    
                             <article class="card">
                                 <img src="./images/activites/fort-de-pomegues.jpg"
                                     alt="Image du Fort de Pomègues">
@@ -271,21 +268,19 @@
                                     <div class="card-txt">
                                         <h3 class="card-title">Fort de Pomègues</h3>
                                     </div>
-                                    </div>
-                                    </div>
+                                </div>
+                            </article>  
 
-                                     <div class="populaires-cards">
                             <article class="card">
-                                <img src="./images/activites/parc-national.jpg"
-                                    alt="Image du Parc national des Calanques">
-                                <div class="card-content">
-                                    <div class="card-txt">
-                                        <h3 class="card-title">Parc national des Calanques</h3>
+                                    <img src="./images/activites/parc-national.jpg"
+                                        alt="Image du Parc national des Calanques">
+                                    <div class="card-content">
+                                        <div class="card-txt">
+                                            <h3 class="card-title">Parc national des Calanques</h3>
+                                        </div>
                                     </div>
-                                    </div>
-                                    </div>
-
-                                    <div class="populaires-cards">
+                            </article>
+                    
                             <article class="card">
                                 <img src="./images/activites/notre-dame.jpg"
                                     alt="Image de Notre-Dame-de-la-Garde">
@@ -294,9 +289,10 @@
                                         <h3 class="card-title">Notre-Dame-de-la-Garde</h3>
                                     </div>
                                     </div>
-                                    </div>
-                                    
-
+                                    </article>    
+                    </div>     
+             </Section>
+                                     
              
         </main>
         <footer>
@@ -323,7 +319,7 @@
                 </ul>
             </div>
         </footer>
-    </div>
+ </div>
 
 </body>
 
