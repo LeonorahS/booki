@@ -86,7 +86,7 @@ ul.filtres-list {
 section.filtres{
        display: flex;
     width: 100%;
-    height: 50px;
+    height: auto;
     gap: 5px;
     text-align: center;
     /* unicode-bidi: normal; */
@@ -415,6 +415,14 @@ margin: 0%;
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
+
+
+
+
+
+
+
+
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
     .hebergements-and-populaires {
@@ -451,5 +459,137 @@ margin: 0%;
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+   
+    nav{
+        justify-content: center;
+        flex-direction: column;
+        align-items: ;
+    }
+    .ulnav {
+  
+  unicode-bidi: plaintext;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0px;
+  align-self: baseline;
+  align-content: space-between;
+}
+   
+#logo{
+    margin: 15px 0;
+}
+ h1{
+    font-size: 18px;
+    text-align: center;
+ }
+.desc{
+   font-size: 14px;
+    text-align: center;
+    display: ruby-text;
+    unicode-bidi: plaintext;
+    margin: auto;
+}
+.filtres button{
+    font-size: 14px;
+
+}
+
+.section-title{
+    font-size: 18px;
+}
+/****************************************************************** le header pas terribles je veut savoir commment aranger*/
+@media (max-width: 767px) {
+  .rechercher-form {
+    
+    max-width: 335px; /* comme sur ta maquette */
+    margin: 20px auto; /* centré horizontalement pas terribles non; comment faire pour changer l'icone ? */
+  }
+
+  .rechercher-form input {
+    font-size: 14px;
+    border-radius: 0 10px 0 10px;
+    padding: 10px;
+  }
+
+
+  .rechercher-form button {
+    font-size: 14px;
+    padding: 8px;
+    height: 49px;
+    border-radius: 0;
+    padding: 0 15px;
+  }
+
+  #rechercher{
+    padding: 0%;
+    width: 49px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #rechercher i {
+    font-size: 18px;
+  }
+}
+/*filtres*/ 
+ section.filtres {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+ .filtres-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    unicode-bidi: plaintext;
+  }
+
+  .filtres-list li {
+    width: 45%; /* 2 colonnes */
+    display: flex;
+    justify-content: center;
+  }
+
+  .filtres button {
+    width: 100%;
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .hebergements-and-populaires {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+
+  .a-hebe {
+    flex: 1 1 100%;
+  }
+ 
+    .populaires-cards {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .populaires-cards a {
+    width: 100%;
+  }  
+/*** activites et footer le plus simple possible**/
+ .card-acti {
+    flex: 1 1 100%;
+  }
+ footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-card {
+    width: 100%;
+    align-items: center;
+  }
+
+
+
+
 }
