@@ -37,6 +37,12 @@ nav {
     gap: 65%;
     list-style: none;
 }
+
+.ulnav:hover{
+    color:#0065FC;
+    text
+}
+
 #logo{
     width: 61.09px;
     height: 19px;
@@ -125,13 +131,17 @@ font-weight: bolder;
     text-align: center;
 }
 
+.label-location{
+text-align: center;
+}
+
 
 i.fa-solid.fa-location-dot {
-    font-size: 20px;
+    font-size: 18px;
     color: #000000;
-    border-radius: 10px 0 0 10px;
+    border-radius: 15px 0 0 15px;
     background-color: #F2F2F2;
-    padding: 15px;
+    padding: 10px;
 }
 .filtres button{
   width: 173px;
@@ -146,11 +156,14 @@ i.fa-solid.fa-location-dot {
   cursor: pointer;
 }
 
-#fire:hover{
+.filtres-list button:hover{
     background-color:#DEEBFF ;
 }
 
 .info{
+     width: 100%;
+    height: auto;
+    margin-bottom: 30px;
     display: flex;
     justify-content: left;
     align-items: center;
@@ -159,15 +172,13 @@ i.fa-solid.fa-location-dot {
 
 }
 
-aside{
-    width: 100%;
-    height: auto;
-    margin-bottom: 30px;
-}
-.fa-solid.fa-circle-info {
+
+.fa-solid fa-info rond-info{
     width: 24px;
     height: 24px;
-    border: 1px grey;
+    border: 2px solid #D9D9D9;
+    border-radius: 50%;
+    padding: 5px;
 }
 
 
@@ -245,8 +256,9 @@ a {
     display: flex;
     flex-direction: column;
     height: 100%;
-    border-radius: 15px;
+    border-radius: 20px;
     overflow: hidden;
+    padding: 5px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
@@ -281,7 +293,9 @@ a {
     color: var(--main-bg-color);
 }
 
-
+.hebergements h3{
+    margin-top: 30px;
+}
 
 /*****populaires ne pas toucher*****/
 

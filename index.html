@@ -32,7 +32,7 @@
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p class="desc">En plein centre de ville ou en pleine nature</p>
                 <form class="rechercher-form" action="#">
-                <label for="location"><i class="fa-solid fa-location-dot"></i></label>
+                <label class="label-location" ><i class="fa-solid fa-location-dot"></i></label>
                 <input type="text" id="location" placeholder="Marseille, France">
                 <button id="rechercher" type="submit">Rechercher</button>
                 </form>
@@ -45,17 +45,18 @@
                         <li><button id="fire"><i class="fa-solid fa-fire"></i>Nos pépites</button></li>
                     </ul>
                 </section>
-                <aside class="info">
-                    <i class="fa-solid fa-circle-info"></i>
+                <div class="info">
+                <i class="fa-solid fa-info rond-info"></i>
                     <p>Plus de 500 logements sont disponibles dans cette ville</p>
-                </aside>
+                </div>
+                
           </div>
            
 
             <div class="hebergements-and-populaires">
                 <section class="hebergements">
                             <div class="hebergements-title">
-                                <h2 class="section-title">Hébergements à Marseille</h2>
+                                <h2 id="hebergements" class="section-title">Hébergements à Marseille</h2>
                             </div>
                             <div class="hebergements-cards">
                                 <a class="a-hebe" href="#">
@@ -254,7 +255,7 @@
 
              <section class="activites">
   <div class="activites-title">
-    <h2 class="section-title">Activités à Marseille</h2>
+    <h2 id="activites" class="section-title">Activités à Marseille</h2>
   </div>
   <div class="activites-card">
     <figure class="card-acti">
