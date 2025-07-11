@@ -437,8 +437,19 @@ margin: 0%;
 
 
 
-/* Medium devices (tablets, less/equal than 1024px) */
+/* Medium devices (tablets, less/equal than 1024px) min-width: 768px et max-width: 1024px */
 @media (max-width: 1024px) {
+
+    .filtres{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .filtres-list{
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
     .hebergements-and-populaires {
         flex-direction: column;
     }
