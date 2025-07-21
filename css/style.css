@@ -32,27 +32,39 @@ nav {
 .ulnav{
     display: flex;
     width: 30%;
-    height: 35px;
+    height:100%;
     padding: 0 3%;
-    gap: 65%;
+    justify-content: space-between;
+    font-size: 15px;
+    margin-top: 0%;
+    /*gap: 65%;*/
     list-style: none;
 }
 
-.ulnav li :hover{
-    color: #0065FC;
-    text-decoration-line: overline;
+.ulnav a{
+    padding: 30px;
 }
 
+.ulnav li:hover{
+      border-top: 2px solid #0065FC;
+    color: #0065FC;
+    padding-top: 27px;
+}
+
+
+
+
 #logo{
-    width: 61.09px;
-    height: 19px;
+    width: 75%;
+    margin-top: 5px;
 }
 
 h1{
     font-weight: 700;
-    size: 22px;
+    size: 24px;
     line-height: 100%;
-
+    margin-top: 30px;
+    
     letter-spacing: 0%;
 }
 .desc{
@@ -86,7 +98,7 @@ ul.filtres-list {
     align-items: flex-start;
     /* justify-content: space-between; */
     width: 100%;
-    height: 50px;
+    height: auto;
     gap: 15px;
     padding-inline-start: 0%;
 }
@@ -99,7 +111,7 @@ section.filtres{
     /* unicode-bidi: normal; */
     unicode-bidi: plaintext;
     align-items: baseline;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 h3{
@@ -117,6 +129,7 @@ h3{
 
 #rechercher{
 display: inline-block;
+position: relative;
 border-radius: 0 15px 15px 0;
 background-color: #0065FC;
 border: 1px;
@@ -124,6 +137,7 @@ color: white;
 padding: 10px;
 font-weight: bolder;
 align-content: center;
+height: auto;
 cursor: pointer;
 }
 
@@ -133,17 +147,21 @@ cursor: pointer;
     color: #D9D9D9;
     border: none;
     padding: 0 18px;
-    height: 49px;
+    height:auto;
     border-radius: 15px;
     font-size: 18px;
     cursor: pointer;
 }
 #location{
+    position: relative;
     color: #000000;
-    font-weight: 700;
+    font-weight: bolder;
     font: Raleway;
     font-size: 18px;
     text-align: center;
+    padding: 10px;
+    border: 1px solid #F2F2F2 ;
+    height: auto;
 }
 
 .label-location{
@@ -154,10 +172,12 @@ text-align: center;
 i.fa-solid.fa-location-dot {
     font-size: 22px;
     color: #000000;
-    border-radius: 15px 0 0 15px;
+    border-radius: 15px 0px 0px 15px;
     background-color: #F2F2F2;
     padding: 13px;
     height: auto;
+    position: relative;
+    align-content: center;
 }
 .filtres button{
   width: 173px;
@@ -179,7 +199,7 @@ i.fa-solid.fa-location-dot {
 .info{
      width: 100%;
     height: auto;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     display: flex;
     justify-content: left;
     align-items: center;
@@ -190,11 +210,15 @@ i.fa-solid.fa-location-dot {
 
 
 .fa-solid fa-info rond-info{
+    display: flex;
+    justify-content: center;
     width: 24px;
     height: 24px;
-    border: 2px solid #D9D9D9;
-    border-radius: 50%;
-    padding: 5px;
+    border: 1px solid #d9d9d9;
+    border-radius: 25%;
+    padding: 10px;
+    color: #0065FC;
+    margin-right: 10px;
 }
 
 
