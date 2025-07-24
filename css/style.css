@@ -15,8 +15,16 @@
     height: 22px;
     border-top: 1px;
     border-left: 2.5px;
+   
 }
-
+.rond-info{
+     align-items: center;
+    border: 1px solid #d9d9d9;
+    border-radius: 50%;
+    text-align: center;
+    padding: 5px;
+    margin-right: 10px;
+}
 body {
     display: flex;
     justify-content: center;
@@ -40,15 +48,15 @@ nav {
     /*gap: 65%;*/
     list-style: none;
 }
-
-.ulnav a{
+.ulnav li{
     padding: 30px;
 }
+
 
 .ulnav li:hover{
       border-top: 2px solid #0065FC;
     color: #0065FC;
-    padding-top: 27px;
+    padding-top: 30px;
 }
 
 
@@ -104,7 +112,7 @@ ul.filtres-list {
 }
 section.filtres{
        display: flex;
-    width: 100%;
+
     height: auto;
     gap: 5px;
     text-align: center;
@@ -180,8 +188,7 @@ i.fa-solid.fa-location-dot {
     align-content: center;
 }
 .filtres button{
-  width: 173px;
-  height: auto;
+  
   border-radius: 25px;
   border: 2px solid #d9d9d9;
   padding: 8px 19px 8px 19px;
@@ -197,7 +204,6 @@ i.fa-solid.fa-location-dot {
 }
 
 .info{
-     width: 100%;
     height: auto;
     margin-bottom: 10px;
     display: flex;
@@ -548,6 +554,7 @@ margin: 0%;
 /*******************************************************************************************************************************/
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+   
 
     main{
     width: 100%;
@@ -570,7 +577,11 @@ margin: 0%;
         align-items: center;
        }
     #logo{
-        margin: 15px 0;
+        display: flex;
+        margin:auto;
+        width: 45%;
+        margin-top: 20px;
+        margin-bottom: 15px;
     }
    
     nav{
@@ -581,9 +592,8 @@ margin: 0%;
 
     .ulnav {
          unicode-bidi: plaintext;
-        margin-block-start: 0;
-        margin-block-end: 0;
-        padding-inline-start: 0px;
+        margin: 0%;
+        padding: 0%;
         align-self: baseline;
         justify-content: space-around;
         display: flex;
@@ -595,27 +605,39 @@ margin: 0%;
 
     .ulnav li{
   position: relative; /* nécessaire pour positionner le ::after */
-  padding-bottom: 5px; /* espace pour la bordure */
+  padding-bottom: 15px; /* espace pour la bordure */
+  text-align: center;
  
  }
-.ulnav li::after{
-    content: ""; /* nécessaire pour afficher le ::after*/ 
+ 
+
+
+ .ulnav li:hover{
+    border-top: 0px #D9D9D9;
+    border-bottom: 2px solid #0065FC;
+    color: #0065FC;
+    padding-top: 0px;
+    padding-bottom: 15px;
+    transition: width 0.3s;
+    width: 50%;
+    
+}
+
+
+.ulnav li:hover::after {
+    content: "";
     position: absolute;
     bottom: 0;
     left: 0;
+    width: 100%; /* toute la largeur */
     height: 2px;
-    width: 50%; /* 50% de la largeur de l'élément */
-    color: #0065FC;
-
+    background-color: var(--main-color);
 }
 
 
-.ulnav li ::after{
-    width: 0;
-    transition: width 0.3s;
-    width: 50%;
-    color: #0065FC;
-}
+
+
+   
 
 
 /*test avec text deco
