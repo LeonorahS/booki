@@ -19,7 +19,6 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 .ulnav{
     display: flex;
@@ -29,7 +28,6 @@ nav {
     justify-content: space-between;
     font-size: 15px;
     margin-top: 0%;
-    /*gap: 65%;*/
     list-style: none;
 }
 .ulnav li{
@@ -42,7 +40,6 @@ nav {
     padding-top: 30px;
 }
 
-
 #logo{
     width: 75%;
     margin-top: 5px;
@@ -53,7 +50,6 @@ h1{
     size: 24px;
     line-height: 100%;
     margin-top: 30px;
-    
     letter-spacing: 0%;
 }
 .desc{
@@ -147,6 +143,7 @@ h3{
     text-align: center;
     padding: 10px;
     border: 1px solid #F2F2F2 ;
+    width: 195px;
     height: auto;
 }
 
@@ -165,11 +162,11 @@ i.fa-solid.fa-location-dot {
     align-content: center;
 }
 .filtres button{
-  
+    display: flex;
   border-radius: 25px;
   border: 2px solid #d9d9d9;
   padding: 8px 19px 8px 19px;
-  gap: 10px;
+  gap:10px;
   background-color:white;
   font-size: 17px;
   font-weight: bolder;
@@ -292,7 +289,7 @@ a {
     background: white;
     display: flex;
     flex-direction: column;
-    height: 100%;
+   /* height: 100%;*/
     border-radius: 20px;
     overflow: hidden;
     padding: 5px;
@@ -390,7 +387,7 @@ a {
 }
 
 .card-acti {
-margin: 0%;
+  margin: 0%;
   flex: 0 1 calc(25% - 20px);
   display: flex;
   flex-direction: column;
@@ -402,10 +399,9 @@ margin: 0%;
 
 .card-acti img {
   width: 100%;
-  height: 500px;
+  height: 400px;
   object-fit: cover;
   cursor: pointer;
-  
 }
 
 .card-acti figcaption {
@@ -555,7 +551,6 @@ footer{
         unicode-bidi: plaintext;
         box-sizing: border-box;
         padding: 0%;
-
     }
 
     header{
@@ -634,6 +629,7 @@ footer{
     }
 
     .filtres button{
+        
         font-size: 14px;
     }
 
@@ -649,7 +645,7 @@ footer{
         margin-bottom: 30px;
         margin-left: 30px;
         /*align-content: center;*/
-         max-width: 335px; /* comme sur la maquette aproximativement*/
+         max-width: 335px; /* comme sur la maquette aprox*/
          height: 49px;
     }
     .trouvez{
@@ -716,6 +712,7 @@ footer{
     section.filtres {
         flex-direction: column;
         margin-left: 10px;
+        margin-bottom: 0%;
     }
 
     .filtres-list {
@@ -739,8 +736,7 @@ footer{
     }
 
     .info{
-        margin: 15px;
-        margin-top: 40px;
+        margin: 10px;
         justify-content: center;
     }
 
